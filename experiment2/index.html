@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md p-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-blue-700">Sarthak Arora</h1>
+    <div class="w-16 h-16 overflow-hidden rounded-full border-2 border-blue-500">
+      <img src="portfolio.jpg" alt="Profile" class="w-full h-full object-cover"/>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-8 space-y-10 px-4">
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-700">Introduction</h3>
+      <p class="leading-relaxed">
+        Hi, I'm Sarthak Arora, a 3rd-year B.E. student with a strong passion for technology.<br/>
+        I'm a skilled Web Developer and an aspiring DevOps Specialist, focused on building efficient, scalable, and user-friendly applications.<br/>
+        I enjoy turning ideas into reality through clean code and smart automation.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-700">Social Profile Links</h3>
+      <ul class="list-disc list-inside space-y-1 text-blue-600">
+        <li><a href="#">Email</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-700">Skills</h3>
+      <ol class="list-decimal list-inside space-y-1">
+        <li>Data Structures and Algorithms</li>
+        <li>Web Development (MERN)</li>
+        <li>System Design</li>
+        <li>DevOps</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-4 text-gray-700">Education</h3>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border border-collapse border-gray-300 text-sm">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border px-4 py-2">Course</th>
+              <th class="border px-4 py-2">University/School</th>
+              <th class="border px-4 py-2">Marks or Grades</th>
+              <th class="border px-4 py-2">Passing Out Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">BE</td>
+              <td class="border px-4 py-2">Chandigarh University</td>
+              <td class="border px-4 py-2">7.89 CGPA</td>
+              <td class="border px-4 py-2">2027</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">12th</td>
+              <td class="border px-4 py-2">GMT International</td>
+              <td class="border px-4 py-2">79%</td>
+              <td class="border px-4 py-2">2021</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">10th</td>
+              <td class="border px-4 py-2">GMT International</td>
+              <td class="border px-4 py-2">79%</td>
+              <td class="border px-4 py-2">2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-700">Projects</h3>
+      <ul class="space-y-6">
+        <li>
+          <strong class="text-lg">E-Commerce Website</strong>
+          <p class="mt-1 text-gray-600">
+            Built with React, Node.js, Express, and MongoDB. Features include drag-and-drop cart (Dnd Kit), purchase history graphs, Google Maps API for order tracking, dynamic routing with React Router, and webhooks for secure payments.
+          </p>
+        </li>
+        <li>
+          <strong class="text-lg">Krishi Sahayak</strong>
+          <p class="mt-1 text-gray-600">
+            A frontend React app using Chart.js, Dnd Kit, and Redux Toolkit. Supports AI-powered crop prediction with sensor-based Arduino integration for maintaining growing conditions.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-4 text-gray-700">Contact Me</h3>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" placeholder="Name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+        </div>
+
+        <div>
+          <label for="emaill" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="emaill" placeholder="Email" autocomplete="off" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+        </div>
+
+        <div>
+          <label for="reason" class="block text-sm font-medium text-gray-700">Reason for Contact</label>
+          <select id="reason" name="reason" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            <option value="">Subject</option>
+            <option value="project">I want to hire you for a project</option>
+            <option value="freelance">Freelance collaboration</option>
+            <option value="job">Job opportunity</option>
+            <option value="startup">Startup partnership or co-founder discussion</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="details" class="block text-sm font-medium text-gray-700">Description</label>
+          <textarea id="details" rows="6" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6 mt-10 border-t">
+    &copy; 2025 Sarthak Arora. All rights reserved.
+  </footer>
+
+</body>
+</html>
